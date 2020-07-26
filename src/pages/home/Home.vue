@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + '广东')
+      axios.get('/api/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
